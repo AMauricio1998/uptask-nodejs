@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/css/normalize.css"/>
+    <link rel="stylesheet" href="/css/app.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title></title>
+  </head>
+  <body class="login">
+    <div class="contenedor-formulario">
+      <h1>Crea tu cuenta en Uptask</h1>
+      <form class="caja caja-login" id="formulario" action="/crear-cuenta" method="POST">
+        <div class="campo"> 
+          <label for="email">E-mail: </label>
+          <input type="email" name="email" placeholder="Tu email"/>
+        </div>
+        <div class="campo">
+          <label for="password">Password: </label>
+          <input type="password" name="password" placeholder="Tu password"/>
+        </div>
+        <div class="campo enviar">
+          <input class="boton" type="submit" value="Creas Cuenta"/>
+        </div>
+        <div class="campo"><a href="/iniciar-sesion">Volver a Iniciar Sesion</a></div>
+      </form>
+    </div>
+  </body>
+</html>
